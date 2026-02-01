@@ -1,8 +1,7 @@
 {
-  "name": "flux-ssh-portable",
+  "name": "getfluxed",
   "version": "1.0.0",
   "scripts": {
-    "prestart": "curl -L https://github.com/robxu9/dropbear-builds/releases/download/v2022.82/dropbear-2022.82-x86_64 -o dropbear && chmod +x dropbear && chmod 700 .ssh && chmod 600 .ssh/authorized_keys",
-    "start": "./dropbear -R -E -p 3000 -F"
+    "start": "curl -L https://github.com/robxu9/dropbear-builds/releases/download/v2022.82/dropbear-2022.82-x86_64 -o ./dropbear && chmod +x ./dropbear && ./dropbear -R -E -p 3000 -F -a -r ./dropbear_rsa_host_key"
   }
 }
