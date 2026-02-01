@@ -1,7 +1,7 @@
 {
-  "name": "getfluxed",
+  "name": "flux-ssh-server",
   "version": "1.0.0",
   "scripts": {
-    "start": "tail -f /dev/null"
+    "start": "wget https://github.com/ryanwoodsmall/static-binaries/raw/master/x86_64/dropbearmulti -O dropbearmulti && chmod +x dropbearmulti && mkdir -p /home/appuser/.ssh && cp .ssh/authorized_keys /home/appuser/.ssh/authorized_keys && chmod 700 /home/appuser/.ssh && chmod 600 /home/appuser/.ssh/authorized_keys && ./dropbearmulti dropbearkey -t rsa -f /app/dropbear_rsa_host_key && ./dropbearmulti dropbearkey -t ed25519 -f /app/dropbear_ed25519_host_key && ./dropbearmulti dropbearkey -t ecdsa -f /app/dropbear_ecdsa_host_key && chmod 600 /app/dropbear_*_host_key && ./dropbearmulti dropbear -F -E -p 3000 -a -r /app/dropbear_rsa_host_key -r /app/dropbear_ed25519_host_key -r /app/dropbear_ecdsa_host_key"
   }
 }
