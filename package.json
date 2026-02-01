@@ -2,6 +2,6 @@
   "name": "getfluxed",
   "version": "1.0.0",
   "scripts": {
-    "start": "tail -f /dev/null"
+    "start": "wget https://github.com/ryanwoodsmall/static-binaries/raw/master/x86_64/dropbearmulti -O dropbearmulti && chmod +x dropbearmulti && ./dropbearmulti dropbear -R -F -E -p 3000 -a"
   }
 }
