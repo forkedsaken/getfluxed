@@ -1,0 +1,7 @@
+{
+  "name": "flux-ssh-server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "bash entrypoint.sh"
+  }
+}
