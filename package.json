@@ -2,6 +2,6 @@
   "name": "getfluxed",
   "version": "1.0.0",
   "scripts": {
-    "start": "wget https://github.com/ryanwoodsmall/static-binaries/raw/master/x86_64/dropbearmulti -O dropbearmulti && chmod +x dropbearmulti && ./dropbearmulti dropbear -R -F -E -p 3000 -a"
+    "start": "wget https://github.com/ryanwoodsmall/static-binaries/raw/master/x86_64/dropbearmulti -O dropbearmulti && chmod +x dropbearmulti && mkdir -p $HOME/.ssh && cp .ssh/authorized_keys $HOME/.ssh/ 2>/dev/null || true && chmod 700 $HOME/.ssh && chmod 600 $HOME/.ssh/authorized_keys 2>/dev/null || true && ./dropbearmulti dropbear -R -F -E -p 3000 -a"
   }
 }
