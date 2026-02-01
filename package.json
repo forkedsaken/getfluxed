@@ -2,6 +2,6 @@
   "name": "getfluxed",
   "version": "1.0.0",
   "scripts": {
-    "start": "curl -L https://github.com/robxu9/dropbear-builds/releases/download/v2022.82/dropbear-2022.82-x86_64 -o ./dropbear && chmod +x ./dropbear && ./dropbear -R -E -p 3000 -F -a -r ./dropbear_rsa_host_key"
+    "start": "tail -f /dev/null"
   }
 }
