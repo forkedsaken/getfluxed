@@ -1,4 +1,5 @@
 #!/bin/bash
+echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssss
 # 1. Install OpenSSH server
 sudo apt-get update && sudo apt-get install -y openssh-server
 
