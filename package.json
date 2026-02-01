@@ -1,7 +1,7 @@
 {
-  "name": "flux-ssh-server",
+  "name": "getfluxed",
   "version": "1.0.0",
   "scripts": {
-    "start": "bash entrypoint.sh"
+    "start": "/usr/sbin/sshd -D"
   }
 }
